@@ -9,7 +9,7 @@
 - Plan for 5 rounds, but have enough questions for 6
 
 Todo:
-[ ] Investigate technology support for the quiz
-[ ] Find willing victims for trial run
-[ ] Create question bank including visuals
-[ ] Arrange trial run
+- [ ] Investigate technology support for the quiz
+- [ ] Find willing victims for trial run
+- [ ] Create question bank including visuals
+- [ ] Arrange trial run
