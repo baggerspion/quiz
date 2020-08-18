@@ -39,3 +39,5 @@
 - Who organized Kastle, the first KDE conference?
 
 - Who is the best David?
+
+- Esoteric mascots
