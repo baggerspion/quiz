@@ -13,3 +13,7 @@ Todo:
 - [ ] Find willing victims for trial run
 - [ ] Create question bank including visuals
 - [ ] Arrange trial run
+
+
+*August 18th*
+- Correct date is Thursday September 10th 20:30-22:00
