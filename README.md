@@ -1,5 +1,5 @@
 # Akademy Quiz
-## Wednesday, April 9, 2020
+## Wednesday, September 9, 2020
 
 ### Notes
 *July 2*
