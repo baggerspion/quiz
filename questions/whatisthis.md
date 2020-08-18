@@ -7,6 +7,10 @@
 - krita
 - kdenlive
 - gcompris
+- konqueror
+- kpilot
+- kteamtime
+- kfloppy
 
 > Name that theme
 
