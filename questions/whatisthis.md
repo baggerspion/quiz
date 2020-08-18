@@ -1,15 +1,17 @@
 > The idea here is to show extreme close up of an application
 > and ask what it is.
 
+*ade* to look after screenies of applications
+
 - konsole
 - falkon
 - kate
 - krita
 - kdenlive
 - gcompris
-- konqueror
 - kpilot
-- kteamtime
+- kteatime
+- dolphin
 - kfloppy
 
 > Name that theme
