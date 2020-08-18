@@ -27,3 +27,7 @@
 - Pardus
 - that windows-look-alike
 - Elementary OS
+
+## Notes
+- Ade to look after application screenies
+- Paul to look after the themes and distros
