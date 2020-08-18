@@ -11,6 +11,8 @@
 > Name that theme
 
 - Fluffy bunny
+- Oxygen
+- Crystal
 
 > Name that distro
 
