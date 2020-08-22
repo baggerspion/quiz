@@ -9,16 +9,19 @@
 %
 % \witq{answer}{ans.1}{ans.2}{ans.3}{ans.4}{ans.5}
 %   Produces a question slide using *abbrev*-*answer*-q as image
-%   and the five answers as text. One of the five must match *answer*.
+%   and the five answers as text. The correct answer is *ans.1*.
+%   The answers are shown in random order.
 %
-% \textq{question-phrase}{answer-letter}{ans.1}..{ans.5}
+% \textq{question-phrase}{ans.1}..{ans.5}
 %   Produces a question slide with *question-text* as the
-%   actual question, and 5 answers. Provide the letter of the
-%   answer as the second parameter/
+%   actual question, and 5 answers. The correct answer is *ans.1*.
+%   The answers are shown in random order.
 %
 % \witqend
-%   Produces answers slides, now with *abbrev*-*answer* as
-%   (full-screen) image for the answer.
+%   Produces answers slides
+%   - uses *abbrev*-*answer* as (full-screen) image for the answer 
+%     if the question was made with \witq
+%   - repeats the question if \txtq was used.
 %
 % Images may be any format supported by \includegraphics
 
