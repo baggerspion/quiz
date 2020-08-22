@@ -4,20 +4,69 @@
 	\begin{itemize}
 		\item Know your applications!
 		\item May be KDE applications, or maybe not
-		\item It's \emph{still} multiple choice
-		\pause
-	\item Know a book by its cover,\\\quad an application by its screenshot
+        \item Know a book by its cover,\\\quad an application by its screenshot
 	\end{itemize}
 \end{frame}
 
+\newcommand*\answers{}
+\makeatletter
+\def\witq#1#2#3#4#5#6{
+    \begin{frame}
+    \frametitle{What is This}
+    \begin{columns}
+    \begin{column}{0.7\textwidth}
+        \vspace{-1cm}
+        \begin{center}
+        \noindent\includegraphics[width=\textwidth]{img/wit-#1.png}
+        \end{center}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+        \bigskip
+        \begin{enumerate}
+            \item[A] #2
+            \item[B] #3
+            \item[C] #4
+            \item[D] #5
+            \item[E] #6
+        \end{enumerate}
+    \end{column}
+    \end{columns}
+    \end{frame}
+    \def\@ansX{#1}%
+    \def\@ansA{#2}%
+    \def\@ansB{#3}%
+    \def\@ansC{#4}%
+    \def\@ansD{#5}%
+    \def\@ansE{#6}%
+    \ifx\@ansX\@ansA
+    \g@addto@macro\answers{\item A #1}%
+    \else%
+    \ifx\@ansX\@ansB
+    \g@addto@macro\answers{\item B #1}%
+    \else%
+    \ifx\@ansX\@ansC
+    \g@addto@macro\answers{\item C #1}%
+    \else%
+    \ifx\@ansX\@ansD
+    \g@addto@macro\answers{\item D #1}%
+    \else%
+    \ifx\@ansX\@ansE
+    \g@addto@macro\answers{\item E #1}%
+    \else%
+    \g@addto@macro\answers{\item ? #1}%
+    \fi\fi\fi\fi\fi
+}
+\makeatother
 
-\def\witq#1{
+\witq{konsole}{xterm}{yterm}{yakuake}{konsole}{powershell}
+
 \begin{frame}
 \frametitle{What is This}
-#1
-\end{frame}
-}
 
-\witq{dolphin}
-\witq{konsole}
-\witq{discover}
+The Answers
+
+\begin{enumerate}
+\answers
+\end{enumerate}
+
+\end{frame}
