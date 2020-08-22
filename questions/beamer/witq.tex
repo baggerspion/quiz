@@ -8,12 +8,14 @@
 %   @param abbrev is used as prefix for image file names
 %
 % \witq{answer}{ans.1}{ans.2}{ans.3}{ans.4}{ans.5}
-%   Produces a question slide using *abbrev*-*answer*-q.png as image
+%   Produces a question slide using *abbrev*-*answer*-q as image
 %   and the five answers as text. One of the five must match *answer*.
 %
 % \witqend
-%   Produces answers slides, now with *abbrev*-*answer*.png as
+%   Produces answers slides, now with *abbrev*-*answer* as
 %   (full-screen) image for the answer.
+%
+% Images may be any format supported by \includegraphics
 
 \makeatletter
 
@@ -37,7 +39,7 @@
     \begin{column}{0.7\textwidth}
         \vspace{-1cm}
         \begin{center}
-        \noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1-q.png}
+        \noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1-q}
         \end{center}
     \end{column}
     \begin{column}{0.3\textwidth}
@@ -80,7 +82,7 @@
 % for the number and name.
 \def\@witq#1#2#3{
     \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2 #1\pause}%
-    \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1.png}}}
+    \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1}}}
 }
 
 \def\witqend{

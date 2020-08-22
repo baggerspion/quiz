@@ -3,7 +3,8 @@
 # List source TeX files (per quiz section) here
 #
 SECTIONS=	\
-        general.tex \
+		general.tex \
+		things.tex \
 		whatisthis.tex \
 		places.tex
 
