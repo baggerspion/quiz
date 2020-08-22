@@ -4,7 +4,8 @@
 #
 SECTIONS=	\
         general.tex \
-		whatisthis.tex
+		whatisthis.tex \
+		places.tex
 
 ### TOOLING
 #
