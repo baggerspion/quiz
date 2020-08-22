@@ -18,7 +18,7 @@ TEX=	TEXINPUTS=.:./beamer: pdflatex
 
 Quiz.pdf : Quiz.tex $(SECTIONS)
 	$(TEX) Quiz
-	$(TEX) Quiz
+	# $(TEX) Quiz
 	$(MAKE) tidy
 
 clean: tidy
