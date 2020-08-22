@@ -3,6 +3,7 @@
 # List source TeX files (per quiz section) here
 #
 SECTIONS=	\
+        general.tex \
 		whatisthis.tex
 
 ### TOOLING
