@@ -11,6 +11,11 @@
 %   Produces a question slide using *abbrev*-*answer*-q as image
 %   and the five answers as text. One of the five must match *answer*.
 %
+% \textq{question-phrase}{answer-letter}{ans.1}..{ans.5}
+%   Produces a question slide with *question-text* as the
+%   actual question, and 5 answers. Provide the letter of the
+%   answer as the second parameter/
+%
 % \witqend
 %   Produces answers slides, now with *abbrev*-*answer* as
 %   (full-screen) image for the answer.
@@ -30,6 +35,26 @@
     \renewcommand\answers{}
     \renewcommand\answerimages{}
     \setcounter{@qnum}{0}
+}
+
+\def\txtq#1#2#3#4#5#6#7{
+    \expandafter\@witqF{#1}{#3}{#4}{#5}{#6}{#7}
+    \if#2A\def\@a{#3}%
+    \else%
+    \if#2B\def\@a{#4}%
+    \else%
+    \if#2C\def\@a{#5}%
+    \else%
+    \if#2D\def\@a{#6}%
+    \else%
+    \if#2E\def\@a{#7}%
+    \else%
+    \def\@a{?}%
+    \fi\fi\fi\fi\fi
+    \stepcounter{@qnum}
+    \edef\@n{\arabic{@qnum}}%
+    \edef\@arg{{#1}{#2 \@a}{\@n}}
+    \expandafter\@txtqG\@arg
 }
 
 \def\witq#1#2#3#4#5#6{
@@ -91,6 +116,11 @@
 \def\@witqG#1#2#3{
     \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2 #1\pause}%
     \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1}}}
+}
+
+\def\@txtqG#1#2#3{
+    \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2\pause}%
+    \g@addto@macro\answerimages{\only<#3>{#1}}
 }
 
 \def\witqend{
