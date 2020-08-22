@@ -9,7 +9,9 @@
 \end{frame}
 
 \newcommand*\answers{}
+\newcommand*\answerimages{}
 \makeatletter
+\newcounter{@qnum}
 \def\witq#1#2#3#4#5#6{
     \begin{frame}
     \frametitle{What is This}
@@ -38,23 +40,26 @@
     \def\@ansC{#4}%
     \def\@ansD{#5}%
     \def\@ansE{#6}%
-    \ifx\@ansX\@ansA
-    \g@addto@macro\answers{\item A #1}%
+    \stepcounter{@qnum}
+    \edef\@n{\arabic{@qnum}}%
+    \ifx\@ansX\@ansA\def\@a{A}%
     \else%
-    \ifx\@ansX\@ansB
-    \g@addto@macro\answers{\item B #1}%
+    \ifx\@ansX\@ansB\def\@a{B}%
     \else%
-    \ifx\@ansX\@ansC
-    \g@addto@macro\answers{\item C #1}%
+    \ifx\@ansX\@ansC\def\@a{C}%
     \else%
-    \ifx\@ansX\@ansD
-    \g@addto@macro\answers{\item D #1}%
+    \ifx\@ansX\@ansD\def\@a{D}%
     \else%
-    \ifx\@ansX\@ansE
-    \g@addto@macro\answers{\item E #1}%
+    \ifx\@ansX\@ansE\def\@a{E}%
     \else%
-    \g@addto@macro\answers{\item ? #1}%
+    \def\@a{?}%
     \fi\fi\fi\fi\fi
+    \edef\@arg{{#1}{\@a}{\@n}}
+    \expandafter\@witq\@arg
+}
+\def\@witq#1#2#3{
+    \g@addto@macro\answers{\item<#3> #2 #1\pause}%
+    \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/wit-#1.png}}}
 }
 \makeatother
 
@@ -62,12 +67,17 @@
 \witq{dolphin}{dolphin}{supertuxcart}{ark}{mc}{krita}
 
 \begin{frame}
-\frametitle{What is This}
+\frametitle{What is This -- Answers}
 
-The Answers
-
-\begin{enumerate}
-\answers
-\end{enumerate}
+\begin{columns}[T]
+\begin{column}{0.3\textwidth}
+    \begin{enumerate}
+    \answers
+    \end{enumerate}
+\end{column}
+\begin{column}{0.7\textwidth}
+    \answerimages
+\end{column}
+\end{columns}
 
 \end{frame}
