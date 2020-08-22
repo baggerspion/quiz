@@ -73,29 +73,7 @@
     \expandafter\@witqG\@arg
 }
 
-% Internal implementation of frame content for image questions
-\def\@witqF#1#2#3#4#5#6{
-    \begin{frame}
-    \frametitle{\@witqsection}
-    \begin{columns}
-    \begin{column}{0.7\textwidth}
-        #1
-    \end{column}
-    \begin{column}{0.3\textwidth}
-        \bigskip
-        \begin{enumerate}
-            \item[A] #2
-            \item[B] #3
-            \item[C] #4
-            \item[D] #5
-            \item[E] #6
-        \end{enumerate}
-    \end{column}
-    \end{columns}
-    \end{frame}
-}
-
-% Internal implementation of frame content for text questions.
+% Internal implementation of frame content for questions.
 % - The list of answers is passed via the global list @witqAnswers
 % - The question is #1
 % - The correct answer (given first to \@txtq) is #2
@@ -127,7 +105,7 @@
 % Internal implementation; this allows one more level of expansion
 % for the number and name.
 \def\@witqG#1#2#3{
-    \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2 #1\pause}%
+    \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2\pause}%
     \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1}}}
 }
 
