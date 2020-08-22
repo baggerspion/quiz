@@ -33,27 +33,13 @@
 }
 
 \def\witq#1#2#3#4#5#6{
-    \begin{frame}
-    \frametitle{\@witqsection}
-    \begin{columns}
-    \begin{column}{0.7\textwidth}
+    \expandafter\@witqF{
         \vspace{-1cm}
         \begin{center}
         \noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1-q}
         \end{center}
-    \end{column}
-    \begin{column}{0.3\textwidth}
-        \bigskip
-        \begin{enumerate}
-            \item[A] #2
-            \item[B] #3
-            \item[C] #4
-            \item[D] #5
-            \item[E] #6
-        \end{enumerate}
-    \end{column}
-    \end{columns}
-    \end{frame}
+}{#2}{#3}{#4}{#5}{#6}
+
     \def\@ansX{#1}%
     \def\@ansA{#2}%
     \def\@ansB{#3}%
@@ -75,12 +61,34 @@
     \def\@a{?}%
     \fi\fi\fi\fi\fi
     \edef\@arg{{#1}{\@a}{\@n}}
-    \expandafter\@witq\@arg
+    \expandafter\@witqG\@arg
+}
+
+% Internal implementation of frame content
+\def\@witqF#1#2#3#4#5#6{
+    \begin{frame}
+    \frametitle{\@witqsection}
+    \begin{columns}
+    \begin{column}{0.7\textwidth}
+        #1
+    \end{column}
+    \begin{column}{0.3\textwidth}
+        \bigskip
+        \begin{enumerate}
+            \item[A] #2
+            \item[B] #3
+            \item[C] #4
+            \item[D] #5
+            \item[E] #6
+        \end{enumerate}
+    \end{column}
+    \end{columns}
+    \end{frame}
 }
 
 % Internal implementation; this allows one more level of expansion
 % for the number and name.
-\def\@witq#1#2#3{
+\def\@witqG#1#2#3{
     \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2 #1\pause}%
     \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1}}}
 }
