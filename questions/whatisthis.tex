@@ -58,7 +58,7 @@
     \expandafter\@witq\@arg
 }
 \def\@witq#1#2#3{
-    \g@addto@macro\answers{\item<#3> #2 #1\pause}%
+    \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2 #1\pause}%
     \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/wit-#1.png}}}
 }
 \makeatother
@@ -76,7 +76,12 @@
 \witq{nethack}{angband}{netcat}{nethack}{rogue}{knetwalk}
 \witq{ksudoku}{kmines}{sudoKu}{ksudoku}{kcharselect}{kakuro}
 \witq{kmines}{ksudoku}{kmines}{kaboom}{kcharselect}{xeyes}
+\witq{khelpcenter}{khelpcenter}{kassist}{kdeaccessibility}{qhelpcenter}{man(1)}
+\witq{kmahjongg}{kreversi}{kmahjongg}{kfourinline}{ltskat}{kpat}
 
+\makeatletter
+\stepcounter{@qnum}
+\makeatother
 
 \begin{frame}
 \frametitle{What is This -- Answers}
