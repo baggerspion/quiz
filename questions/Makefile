@@ -22,4 +22,4 @@ clean: tidy
 	@rm -f Quiz.pdf
 
 tidy:
-	@rm -f Quiz.aux Quiz.log Quiz.nav Quiz.out Quiz.snm Quiz.toc preamble.aux
+	@rm -f Quiz.aux Quiz.log Quiz.nav Quiz.out Quiz.snm Quiz.toc preamble.aux witq.aux

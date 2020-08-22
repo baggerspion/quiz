@@ -8,60 +8,7 @@
 	\end{itemize}
 \end{frame}
 
-\newcommand*\answers{}
-\newcommand*\answerimages{}
-\makeatletter
-\newcounter{@qnum}
-\def\witq#1#2#3#4#5#6{
-    \begin{frame}
-    \frametitle{What is This}
-    \begin{columns}
-    \begin{column}{0.7\textwidth}
-        \vspace{-1cm}
-        \begin{center}
-        \noindent\includegraphics[width=\textwidth]{img/wit-#1-q.png}
-        \end{center}
-    \end{column}
-    \begin{column}{0.3\textwidth}
-        \bigskip
-        \begin{enumerate}
-            \item[A] #2
-            \item[B] #3
-            \item[C] #4
-            \item[D] #5
-            \item[E] #6
-        \end{enumerate}
-    \end{column}
-    \end{columns}
-    \end{frame}
-    \def\@ansX{#1}%
-    \def\@ansA{#2}%
-    \def\@ansB{#3}%
-    \def\@ansC{#4}%
-    \def\@ansD{#5}%
-    \def\@ansE{#6}%
-    \stepcounter{@qnum}
-    \edef\@n{\arabic{@qnum}}%
-    \ifx\@ansX\@ansA\def\@a{A}%
-    \else%
-    \ifx\@ansX\@ansB\def\@a{B}%
-    \else%
-    \ifx\@ansX\@ansC\def\@a{C}%
-    \else%
-    \ifx\@ansX\@ansD\def\@a{D}%
-    \else%
-    \ifx\@ansX\@ansE\def\@a{E}%
-    \else%
-    \def\@a{?}%
-    \fi\fi\fi\fi\fi
-    \edef\@arg{{#1}{\@a}{\@n}}
-    \expandafter\@witq\@arg
-}
-\def\@witq#1#2#3{
-    \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2 #1\pause}%
-    \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/wit-#1.png}}}
-}
-\makeatother
+\witqstart{wit}{What is This}
 
 \witq{konsole}{xterm}{yterm}{yakuake}{konsole}{powershell}
 \witq{dolphin}{dolphin}{supertuxcart}{ark}{mc}{krita}
@@ -86,22 +33,4 @@
 \witq{kandalf}{bilbo}{blogilo}{kandalf}{thorin}{khelpcenter}
 \witq{kteatime}{english breakfast network}{kate}{kteatime}{supertuxteatrolley}{emacs}
 
-\makeatletter
-\stepcounter{@qnum}
-\makeatother
-
-\begin{frame}
-\frametitle{What is This -- Answers}
-
-\begin{columns}[T]
-\begin{column}{0.3\textwidth}
-    \begin{enumerate}
-    \answers
-    \end{enumerate}
-\end{column}
-\begin{column}{0.7\textwidth}
-    \answerimages
-\end{column}
-\end{columns}
-
-\end{frame}
+\witqend
