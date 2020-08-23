@@ -21,6 +21,9 @@ Quiz.pdf : Quiz.tex $(SECTIONS)
 	# $(TEX) Quiz
 	$(MAKE) tidy
 
+
+all: Quiz.pdf
+
 clean: tidy
 	@rm -f Quiz.pdf
 
