@@ -1,19 +1,47 @@
-- Who is the president of KDE e.V.?
-  - Kenny Rogers
-  - Konqui Dragon
-  - Katie Dragon
-  - Aleix Pol i Gonzales
-  - Kenny Coyle
-
-- Who started the KDE project?
-  - Konqui Dragon
-  - Stefan Kulow
-  -
-
-- Who was KDE e.V.'s first employee?
+- Who was KDE eV's first employee?
   - Claudia Rauch
   - Claudia Reimer
   - Claudia Schiffer
+  - Cornelius Schumacher
+  - Lydia Pintscher
+
+- Adriaan de Groot, Kevin Ottens, Paul Adams, Sebastian Kuegler, also known as:
+  - Team Humongous
+  - Konqui's Army
+  - The League of Extraordinary Egos
+  - The Oook Brothers
+  - Kevin and the Alcoholics
+
+- Who is the longest-serving Treasurer of KDE eV?
+  - Mirko Boehm
+  - Marta Rybczynska
+  - Kalle Dalheimer
+  - Eike Hein
+  - Frank Karlitschek
+
+- Who had a board named after them?
+  - Dirk Mueller
+  - Will Stephenson
+  - Jos Poortvliet
+  - Ruphy
+  - Celeste Lyn Paul
+
+- Back in 2008 at the KDE 4 launch event, the KDE community took over the kitchen at the Wild Palms hotel in Mountain View in order to make cookies. Who did the baking?
+  - Adriaan de Groot
+  - Kyle Cunningham
+  - Paul Adams
+  - Helio Castro
+  - Jeff Mitchell
+
+- Which KDE developer was named after a character from Pauls Herbert's masterpiece, "Dune"?
+  - Chani Armitage
+  - Paul Adams
+  - Thufir Angelopoulos
+  - Feyd-Rautha Rossi
+  - Emperor Shaddam IV Jones
+
+
+
 
 - Who **really** runs the e.V.?
   - Adam Szopa

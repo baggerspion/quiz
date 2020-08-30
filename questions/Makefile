@@ -6,7 +6,8 @@ SECTIONS=	\
 		general.tex \
 		things.tex \
 		whatisthis.tex \
-		places.tex
+		places.tex \
+		people.tex
 
 ### TOOLING
 #
