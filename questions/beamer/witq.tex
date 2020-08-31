@@ -27,6 +27,15 @@
 
 \makeatletter
 
+\def\wititle#1#2{
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+        \Huge #1\\
+        \Large #2
+    \end{center}
+\end{frame}
+}
 
 \newcommand*\answers{}
 \newcommand*\answerimages{}
@@ -120,8 +129,10 @@
 \def\witqend{
 \stepcounter{@qnum}
 
+\wititle{\@witqsection}{Answers}
+
 \begin{frame}
-\frametitle{\@witqsection -- Answers}
+\frametitle{\@witqsection\relax\ -- Answers}
 
 \begin{columns}[T]
 \begin{column}{0.3\textwidth}
