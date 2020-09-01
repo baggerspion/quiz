@@ -17,13 +17,13 @@ SECTIONS=	\
 #
 TEX=	TEXINPUTS=.:./beamer: pdflatex
 
+all: Quiz.pdf
+
 Quiz.pdf : Quiz.tex $(SECTIONS)
 	$(TEX) Quiz
 	# $(TEX) Quiz
 	$(MAKE) tidy
 
-
-all: Quiz.pdf
 
 clean: tidy
 	@rm -f Quiz.pdf
