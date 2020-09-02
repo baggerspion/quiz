@@ -90,7 +90,7 @@
 % - The question is #1
 % - The correct answer (given first to \@txtq) is #2
 \def\@witqFromAnswer#1#2{
-    \def\@witqFirst{#2}
+    \edef\@witqFirst{#2}
     \def\@witqCorrectResponse{bogus}
     \begin{frame}
     \frametitle{\@witqsection}
