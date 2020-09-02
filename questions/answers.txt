@@ -1,50 +1,50 @@
 Q 1 {D}: Snow White
-Q 2 {D}: Norwegian
-Q 3 {A}: 1973
-Q 4 {E}: Don Lewis
-Q 5 {A}: David Jones
-Q 6 {C}: Christmas Tree
+Q 2 {A}: Norwegian
+Q 3 {C}: 1973
+Q 4 {A}: Don Lewis
+Q 5 {B}: David Jones
+Q 6 {B}: Christmas Tree
 Q 7 {E}: Red
-Q 8 {E}: Albus Dumbledore
-Q 1 {D}: kdevelop
+Q 8 {D}: Albus Dumbledore
+Q 1 {E}: kdevelop
 Q 2 {C}: dolphin
-Q 3 {C}: Hannah Montana Linux
-Q 4 {D}: kfloppy
-Q 5 {D}: systemsettings
-Q 6 {C}: kmahjongg
+Q 3 {E}: Hannah Montana Linux
+Q 4 {A}: kfloppy
+Q 5 {E}: systemsettings
+Q 6 {D}: kmahjongg
 Q 7 {D}: nethack
-Q 8 {B}: ksudoku
+Q 8 {A}: ksudoku
 Q 1 {C}: Tampere
-Q 2 {B}: 86,300
-Q 3 {A}: N\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hb
-Q 4 {C}: Hercules
+Q 2 {C}: 86,300
+Q 3 {E}: N\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hb
+Q 4 {E}: Hercules
 Q 5 {C}: 60 tonnes
 Q 6 {E}: St.\unhbox\voidb@x \penalty \@M \ {}Peter and St.\unhbox\voidb@x \pena
-Q 7 {B}: Tenerife
-Q 8 {E}: 45
-Q 9 {C}: Jack the Rooster
-Q 10 {C}: Nervi\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempbox
-Q 1 {C}: 387 co-processor socket
-Q 2 {C}: Espresso
-Q 3 {D}: Spirit Level
-Q 4 {B}: FreeBSD 6.3 DVD
-Q 5 {C}: Spade
-Q 6 {B}: Pine64
-Q 7 {C}: Adjustable Spanner
-Q 8 {C}: Spanner
+Q 7 {A}: Tenerife
+Q 8 {D}: 45
+Q 9 {A}: Jack the Rooster
+Q 10 {B}: Nervi\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempbox
+Q 1 {E}: 387 co-processor socket
+Q 2 {D}: Espresso
+Q 3 {C}: Spirit Level
+Q 4 {E}: FreeBSD 6.3 DVD
+Q 5 {D}: Spade
+Q 6 {A}: Pine64
+Q 7 {E}: Adjustable Spanner
+Q 8 {E}: Spanner
 Q 1 {B}: Claudia Rauch
-Q 2 {E}: OpenBSD
-Q 3 {D}: Team Humongous
-Q 4 {E}: Mirko Boehm
-Q 5 {B}: Plan9
+Q 2 {C}: OpenBSD
+Q 3 {C}: Team Humongous
+Q 4 {A}: Mirko Boehm
+Q 5 {C}: Plan9
 Q 6 {C}: Dirk Mueller
-Q 7 {D}: Adriaan de Groot
-Q 8 {B}: Rust
+Q 7 {E}: Adriaan de Groot
+Q 8 {E}: Rust
 Q 1 {C}: Beethoven's 5th
-Q 2 {B}: Come as You Are
-Q 3 {D}: The Cure
-Q 4 {C}: Winnipeg
-Q 5 {D}: k3b
-Q 6 {E}: very serious
-Q 7 {D}: klettres
-Q 8 {B}: Harald Sitter
+Q 2 {D}: Come as You Are
+Q 3 {C}: The Cure
+Q 4 {E}: Winnipeg
+Q 5 {A}: k3b
+Q 6 {A}: very serious
+Q 7 {A}: klettres
+Q 8 {D}: Harald Sitter
