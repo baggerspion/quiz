@@ -1,0 +1,50 @@
+Q 1 {D}: Snow White
+Q 2 {C}: Norwegian
+Q 3 {B}: 1973
+Q 4 {B}: Don Lewis
+Q 5 {D}: David Jones
+Q 6 {A}: Christmas Tree
+Q 7 {D}: Red
+Q 8 {B}: Albus Dumbledore
+Q 1 {B}: kdevelop
+Q 2 {B}: dolphin
+Q 3 {A}: Hannah Montana Linux
+Q 4 {E}: kfloppy
+Q 5 {E}: systemsettings
+Q 6 {B}: kmahjongg
+Q 7 {A}: nethack
+Q 8 {D}: ksudoku
+Q 1 {B}: Tampere
+Q 2 {B}: 86,300
+Q 3 {B}: N\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hb
+Q 4 {A}: Hercules
+Q 5 {C}: 60 tonnes
+Q 6 {B}: St.\unhbox\voidb@x \penalty \@M \ {}Peter and St.\unhbox\voidb@x \pena
+Q 7 {D}: Tenerife
+Q 8 {C}: 45
+Q 9 {A}: Jack the Rooster
+Q 10 {D}: Nervi\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempbox
+Q 1 {B}: 387 co-processor socket
+Q 2 {A}: Espresso
+Q 3 {E}: Spirit Level
+Q 4 {B}: FreeBSD 6.3 DVD
+Q 5 {A}: Spade
+Q 6 {E}: Pine64
+Q 7 {B}: Adjustable Spanner
+Q 8 {C}: Spanner
+Q 1 {E}: Claudia Rauch
+Q 2 {E}: OpenBSD
+Q 3 {A}: Team Humongous
+Q 4 {C}: Mirko Boehm
+Q 5 {B}: Plan9
+Q 6 {A}: Dirk Mueller
+Q 7 {C}: Adriaan de Groot
+Q 8 {E}: Rust
+Q 1 {B}: Beethoven's 5th
+Q 2 {D}: Come as You Are
+Q 3 {E}: The Cure
+Q 4 {A}: Winnipeg
+Q 5 {B}: k3b
+Q 6 {B}: very serious
+Q 7 {E}: klettres
+Q 8 {C}: Harald Sitter
