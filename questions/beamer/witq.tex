@@ -117,11 +117,13 @@
 % Internal implementation; this allows one more level of expansion
 % for the number and name.
 \def\@witqG#1#2#3{
+    \typeout{Q #3 #2}%
     \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2\pause}%
     \g@addto@macro\answerimages{\only<#3>{\noindent\includegraphics[width=\textwidth]{img/\@witqprefix-#1}}}
 }
 
 \def\@txtqG#1#2#3{
+    \typeout{Q #3 #2}%
     \g@addto@macro\answers{\item<#3,\arabic{@qnum}> #2\pause}%
     \g@addto@macro\answerimages{\only<#3>{#1}}
 }

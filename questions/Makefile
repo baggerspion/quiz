@@ -22,6 +22,7 @@ all: Quiz.pdf
 Quiz.pdf : Quiz.tex $(SECTIONS)
 	$(TEX) Quiz
 	# $(TEX) Quiz
+	@grep ^Q Quiz.log
 	$(MAKE) tidy
 
 
