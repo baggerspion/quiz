@@ -1,5 +1,5 @@
 FROM tianon/latex
 
-WORKDIR /project
+WORKDIR /project/questions
 
-CMD make make --file=questions/Makefile
+CMD make
