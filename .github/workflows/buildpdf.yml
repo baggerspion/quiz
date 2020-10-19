@@ -15,7 +15,7 @@ jobs:
     - name: Build and Make
       run: docker-compose up
     - name: rename output file
-      run: mkdir complete && cp output/Quiz.pdf complete/quiz_${{ steps.date.outputs.date }}.pdf
+      run: mkdir complete && cp Quiz.pdf complete/quiz_${{ steps.date.outputs.date }}.pdf
     - name: Archive production artifacts
       uses: actions/upload-artifact@v1
       with:
