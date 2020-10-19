@@ -1,5 +1,6 @@
-FROM tianon/latex
-
-WORKDIR /project
-
-CMD ["make"]
+version: "3"
+services:
+  latex:
+      build: .
+      volumes:
+        - .:/project
