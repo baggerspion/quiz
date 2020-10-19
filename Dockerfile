@@ -2,4 +2,4 @@ FROM tianon/latex
 
 WORKDIR /project
 
-CMD ["make"]
+CMD make make --file=questions/Makefile
